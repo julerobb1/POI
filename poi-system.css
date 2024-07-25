@@ -1,0 +1,64 @@
+body {
+    background-color: #333333;
+  }
+  
+  header {
+    background-color: #333333;
+    padding: 10px;
+  }
+  
+  .progress-bar {
+    background-color: #333333;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .progress {
+    background-color: #FFC080;
+    height: 20px;
+  }
+  
+  .gauges {
+  display:flex;
+  
+  .gauge {
+  background-color:#333333;
+  border-radius:50%;
+  padding:5px;
+  
+  .gauge-inner {
+  background-color:#FFC080;
+  border-radiusinherit;
+  }
+  }
+  
+  .cursor {
+  positionfixed;top:0;left:0;width20px;height20px;background-imageurl(robot-cursor.png);background-sizecover;cursor:none;
+  
+  body{
+  cursor:url(robot-cursor.png),auto;}
+  
+  main{
+  box-shadow0px0px10pxrgba(000000,0.2);
+  
+  .progress-bar{
+  animation:pulse2sinfinite;
+  
+  @keyframespulse{
+  from{
+  widthcalc(3044%-10px);
+  }to{
+  widthcalc(4044%-10px);
+  }
+  }
+  
+  .gauge{
+  animationspininfinite;
+  
+  @keyframespin{
+  from{
+  transformrotate(0deg);
+  }to{
+  transformrotate(360deg);
+  }
+  }
